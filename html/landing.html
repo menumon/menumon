@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+	<meta http-equiv="Pragma" CONTENT="no-cache">
+	<meta http-equiv="Expires" CONTENT="-1">
+	<META http-equiv="Cache-Control" content="no-cache"/>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<title>메뉴몬스터</title>
+</head> 
+<body>
+
+	<div class="wrap">
+		<header>
+			<div class="inner">
+				<div class="logo-wrap">
+					<a href="javascript:void(0);">로고</a>
+				</div>
+				<div class="nav-wrap">
+					<a href="javascript:void(0);" class="btn-menu">모바일 메뉴<span></span><span></span><span></span></a>
+					<div class="dimmed"></div>
+					<nav class="anchor-nav">
+						<ul>
+							<li>
+								<a href="#visual" onclick="ahchorMove(this); return false;">메뉴몬</a>
+							</li>
+							<li>
+								<a href="#service" onclick="ahchorMove(this); return false;">서비스 소개</a>
+							</li>
+							<li>
+								<a href="#introduce" onclick="ahchorMove(this); return false;">제품 소개서</a>
+							</li>
+							<li>
+								<a href="#inquiry" onclick="ahchorMove(this); return false;">문의하기</a>
+							</li>
+							<li class="width-check" style="display:none;">1</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			
+			<!-- 메뉴몬 -->
+			<section id="visual" class="visual">
+				<div class="section-inner animate top">
+					<div class="info-wrap">
+						<div class="info-title">우리 가게<br>‘주문누락 0%’의 수호자</div>
+						<div class="info-desc">주문부터 결제까지 테이블에서 <span class="color-E87443">‘스마트’</span>하게</div>
+						<div class="btn-wrap">
+							<a href="#inquiry" class="anchor" onclick="ahchorMove(this); return false;">
+								<strong>상담 신청하기</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //메뉴몬 -->
+
+			<!-- 서비스 소개 -->
+			<section id="service" class="service">
+				<div class="section-inner animate top">
+					<div class="info-wrap">
+						<div class="info-title">메뉴몬스터와 사장님이<br>꿈꾸는 <strong class="color-E87443">새로운 응대 문화</strong> 는?</div>
+						<div class="info-desc">사장님의 새로운 식당 운영 솔루션, <br class="is-pc" /> <strong>‘태블릿 주문 서비스’</strong>를 통해<br /> 고객응대 시간의 혁신적인 감소로<br class="is-pc" /> 여유로움이 넘치는 식당을 운영하는 것입니다.</div>
+					</div>
+					<div class="card-wrap">
+						<ul>
+							<li>
+								<div>
+									몇 명의 손님이 오더라도
+									<strong>간편하게 터치만으로</strong>
+								</div>
+							</li>
+							<li>
+								<div>
+									기다릴 필요없이 손님 스스로
+									<strong>주문선택 후 결제까지</strong>
+								</div>
+							</li>
+							<li>
+								<div>
+									인건비도 아끼고, 시간도 벌고
+									<strong>전체적인 효율 증가</strong>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="btn-wrap">
+						<a href="javascript:void(0)" class="download">
+							<strong>제품 소개서 다운로드</strong>
+						</a>
+						<a href="#inquiry" class="anchor" onclick="ahchorMove(this); return false;">
+							<strong>상담 신청하기</strong>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="before">
+				<div class="section-inner animate top">
+					<div class="card-wrap">
+						<ul class="list-01">
+							<li>
+								<div>
+									주문을 기다리는
+									<strong>
+										대기시간 상승
+									</strong>
+								</div>
+							</li>
+							<li>
+								<div>
+									매장내 직원과<br>
+									손님으로 인한
+									<strong>
+										혼잡함 발생
+									</strong>
+								</div>
+							</li>
+							<li>
+								<div>
+									직원 수에 따른
+									<strong>
+										인건비 상승
+									</strong>
+								</div>
+							</li>
+						</ul>
+
+						<div class="pointer">
+							메뉴몬스터 이전은 어땠을까요?
+						</div>
+
+						<ul class="list-02">
+							<li>
+								<div>
+									손님과 직원들의
+									<strong>
+										마찰 발생 가능성
+									</strong>
+								</div>
+							</li>
+							<li>
+								<div>
+									직원의 실수로 인한
+									<strong>
+										주문 누락 또는 오류
+									</strong>
+								</div>
+							</li>
+							<li>
+								<div>
+									전체적인
+									<strong>
+										효율의 감소
+									</strong>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- //서비스 소개 -->
+
+			<!-- 제품 소개서 -->
+			<section id="introduce" class="introduce">
+				<div class="section-inner animate top">
+					<div class="info-wrap">
+						<div class="info-title">
+							메뉴몬스터와 함께라면<br class="is-pc" /> <strong class="color-E87443">가능</strong>합니다.
+						</div>
+						<div class="info-desc">
+							매장의 규모에 상관없이<br class="is-flex" /> 몇 명의 손님이 오더라도<br />
+							걱정없이 편하게<br class="is-flex" /> 그리고 효율적으로 관리할 수 있습니다.
+						</div>
+					</div>
+					<div class="swiper-wrap">
+						<div class="swiper-container">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide animate top">
+									<img src="../assets/images/slide_01.png" alt="슬라이드 이미지 01" />
+								</li>
+								<li class="swiper-slide animate top">
+									<img src="../assets/images/slide_02.png" alt="슬라이드 이미지 02" />
+								</li>
+								<li class="swiper-slide animate top">
+									<img src="../assets/images/slide_03.png" alt="슬라이드 이미지 03" />
+								</li>
+								<li class="swiper-slide animate top">
+									<img src="../assets/images/slide_04.png" alt="슬라이드 이미지 04" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="purpose">
+				<div class="section-inner animate top">
+					<div class="info-wrap">
+						<div class="info-title">
+							최적화된 매장 동선관리, 간편 결제,<br class="is-pc" /> 매장 맞춤형 솔루션을 통해<br>
+							손님과 직원 간의<br class="is-pc" /> <strong class="color-E87443">응대 요소를 최소화</strong> 할 수 있습니다.
+						</div>
+						<div class="info-desc">
+							손님이 느끼는 쾌적한 경험은<br class="is-pc" /> 그 무엇보다 뛰어난 효과를 불러올 것입니다.
+						</div>
+					</div>
+					<div class="card-wrap">
+						<ul>
+							<li>
+								<div>
+									<strong>비대면 주문</strong>
+								</div>
+							</li>
+							<li>
+								<div>
+									<strong>간편 호출</strong>
+								</div>
+							</li>	
+							<li>
+								<div>
+									<strong>더치페이</strong>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<div>
+									<strong>선물하기</strong>
+								</div>
+							</li>
+							<li>
+								<div>
+									<strong>신메뉴 광고</strong>
+								</div>
+							</li>
+							<li>
+								<div>
+									<strong>맞춤형<br class="is-pc" /> 메인화면</strong>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="figure-wrap is-mobile">
+						<figure>
+							<img src="../assets/images/figure_left.png" alt="">
+						</figure>
+						<figure>
+							<img src="../assets/images/figure_center.png" alt="">
+						</figure>
+						<figure>
+							<img src="../assets/images/figure_right.png" alt="">
+						</figure>
+					</div>
+					<div class="mobile-figure">
+						<ul>
+							<li class="animate top">
+								<img src="../assets/images/figure_mobile_01.png" alt="">
+							</li>
+							<li class="animate top">
+								<img src="../assets/images/figure_mobile_02.png" alt="">
+							</li>
+							<li class="animate top">
+								<img src="../assets/images/figure_mobile_03.png" alt="">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="find">
+				<div class="section-inner animate top">
+					<div class="figure-wrap is-mobile">
+						<figure class="bg"></figure>
+						<figure class="bg"></figure>
+						<figure class="bg"></figure>
+					</div>
+					<div class="info-wrap">
+						<div class="info-title">
+							<strong>
+								새로운 주문 문화를 만들<br class="is-pc" /> 매장을 찾습니다.
+							</strong>
+						</div>
+						<div class="info-desc">
+							사장님의 고객 응대 수호자<br class="is-pc" /> <strong>‘메뉴몬스터’</strong>를 만나보세요!
+						</div>
+					</div>
+					<div class="btn-wrap">
+						<a href="javascript:void(0)" class="download">
+							<strong>제품 소개서 다운로드</strong>
+						</a>
+						<a href="#inquiry" class="anchor" onclick="ahchorMove(this); return false;">
+							<strong>상담 신청하기</strong>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- //제품 소개서 -->
+			<!-- 문의하기 -->
+			<section id="inquiry" class="inquiry">
+				<div class="section-inner animate top">
+					<div class="info-wrap">
+						<div class="info-title">
+							<strong>
+								지금 바로 문의하기
+							</strong>
+						</div>
+						<div class="info-desc">
+							테이블 오더 서비스 메뉴몬스터에 대해<br class="is-flex" /> 궁금한 점이나<br />
+							서비스 이용에 대해 관심이 있으시다면<br class="is-flex" /> 문의를 남겨주세요.
+						</div>
+					</div>
+					<div class="form-wrap">
+						<form action="" name="" method="">
+							<div class="flex">
+								<input type="text" id="name" class="input-form" name="name" autocomplete="off" required=""  placeholder="이름 or 업체명을 입력해 주세요." />
+								<input type="text" id="email" class="input-form" name="email" autocomplete="off" required=""  placeholder="이메일 주소를 입력해 주세요." />
+							</div>
+							<div class="flex">
+								<textarea name="" id="message" cols="30" rows="10" autocomplete="off" required="" placeholder="문의내용을 입력해 주세요. 확인 후 이메일 주소로 회신 드리겠습니다."></textarea>
+							</div>
+							<div class="flex submit">
+								<div class="btn-wrap">
+									<button id="" type="submit" class="btn-submit">문의하기</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- //문의하기 -->
+
+		</main>
+		<footer>
+			<div class="inner">
+				<h2>주식회사 메뉴몬</h2>
+				<div class="company-info">
+					<ul>
+						<li>
+							<strong>대표자명</strong>김용일
+						</li>
+						<li>
+							<strong>사업자등록번호</strong>188-86-00532
+						</li>
+						<li>
+							<strong>통신판매업 신고번호</strong>2023-서울금천-00000
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<strong>대표전화</strong><a href="tel:1234-1234">1234-1234</a>
+						</li>
+						<li>
+							<strong>팩스번호</strong><a href="tel:123-123-1234">123-123-1234</a>
+						</li>
+						<li>
+							<strong>이메일</strong><a href="mailto:abc@gmail.com">abc@gmail.com</a>
+						</li>
+						<li>
+							<address>서울시 금천구 벚꽃로 24길 13, 701호</address>
+						</li>
+					</ul>
+					<div class="copyright">
+						ⓒ2023. 메뉴몬 Inc. All right reserved.
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+<script src="../assets/js/lib/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/lib/swiper.min.js"></script>
+<script src="../assets/js/ui.js"></script>
+<script>
+$(document).ready(function () {
+
+	
+
+	// introduce - swiper
+	// var introdeSwiper = new Swiper(".introduce .swiper-container", {
+	// 		slidesPerView: "auto",
+	// 		initialSlide :slideInx,
+	// 		loop: true,
+	// 		centeredSlides: true,
+	// 		roundLengths: true,
+	// 		speed: 1000,
+	// 		autoplay: {
+	// 			delay: 2500,
+	// 			disableOnInteraction: false,
+	// 		},
+	// 		on: {
+	// 			activeIndexChange: function () {
+	// 				slideInx = this.realIndex; //현재 슬라이드 index 갱신
+	// 			}
+	// 		},
+	// });
+
+	// $('.introduce .swiper-slide').on('mouseover', function(){
+	// 	introdeSwiper.autoplay.stop();
+	// })
+
+	// $('.introduce .swiper-slide').on('mouseout', function(){
+	// 	introdeSwiper.autoplay.start();
+	// })
+
+	$(window).resize(function() {
+	// keep an eye on viewport size changes
+	breakpoint.breakpointChecker;
+	
+	}); // resize
+
+});
+
+
+const breakpoint = window.matchMedia( '(min-width:1024px)' );
+let introdeSwiper;
+
+const breakpointChecker = function() {
+	// console.log(breakpoint.matches)
+	if ( breakpoint.matches === true ) {
+		enableSwiper()
+		return;
+	} else if ( breakpoint.matches === false ) {
+		if(introdeSwiper !== undefined){
+			introdeSwiper.destroy()
+		}
+		return;
+	}
+};
+
+const enableSwiper = function() {
+	var slideInx = 0;
+	introdeSwiper = new Swiper(".introduce .swiper-container", {
+		slidesPerView: "auto",
+		initialSlide :slideInx,
+		loop: true,
+		centeredSlides: true,
+		roundLengths: true,
+		speed: 1000,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		on: {
+			activeIndexChange: function () {
+				slideInx = this.realIndex; //현재 슬라이드 index 갱신
+			}
+		},
+	});
+};
+
+breakpoint.addListener(breakpointChecker);
+breakpointChecker();
+
+</script>
+
+</body>
+</html>

@@ -6,7 +6,16 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
 	<meta http-equiv="Pragma" CONTENT="no-cache">
 	<meta http-equiv="Expires" CONTENT="-1">
-	<META http-equiv="Cache-Control" content="no-cache"/>
+	<meta http-equiv="Cache-Control" content="no-cache"/>
+	<meta name="og:site_name" content="메뉴몬" />
+	<meta name="og:title" content="MemuMon" />
+	<meta
+  		name="og:description"
+  		content="무인 주문/결제 서비스 메뉴몬"
+	/>
+	<meta name="og:type" content="website" />
+	<meta name="og:url" content="https://menumon.kr" />
+	<meta name="title" content="메뉴몬">
 	<meta name="description" content="메뉴몬은 비대면(무인) 테이블 주문/결제 서비스 입니다.">
 	<meta name="keyword" content="메뉴몬,menumon, 메뉴몬, menu monster, 테이블오더, 브이오더,에스오더,V오더,S오더,메뉴잇,테이블오더,무인결제,태블릿메뉴판,스마트오더,티오더,T오더,vorder,menuit,sorder,오더,order,온오더,onorder"/>
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
@@ -34,8 +43,9 @@
 							<li>
 								<a href="#introduce" onclick="ahchorMove(this); return false;">제품 소개서</a>
 							</li>
-							<li>
-								<a href="#inquiry" onclick="ahchorMove(this); return false;">문의하기</a>
+							<li>								
+								<!-- <a href="#inquiry" onclick="ahchorMove(this); return false;">문의하기</a> -->
+								<a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdHIEyh-wsshK_WJXfBQ-cDGv3sW0aWX-2P4-8tRyq6Nj1XHw/viewform?usp=sf_link" >문의하기</a>
 							</li>
 							<li class="width-check" style="display:none;">1</li>
 						</ul>
@@ -292,7 +302,7 @@
 						<a href="javascript:void(0)" class="download">
 							<strong>제품 소개서 다운로드</strong>
 						</a>
-						<a href="#inquiry" class="anchor" onclick="ahchorMove(this); return false;">
+						<a  target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdHIEyh-wsshK_WJXfBQ-cDGv3sW0aWX-2P4-8tRyq6Nj1XHw/viewform?usp=sf_link" class="anchor" >
 							<strong>상담 신청하기</strong>
 						</a>
 					</div>
@@ -314,7 +324,13 @@
 						</div>
 					</div>
 					<div class="form-wrap">
-						<form action="" name="" method="">
+						<a href="#inquiry" class="anchor" onclick="ahchorMove(this); return false;">
+							<strong>상담 신청하기</strong>
+						</a>
+
+						<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHIEyh-wsshK_WJXfBQ-cDGv3sW0aWX-2P4-8tRyq6Nj1XHw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe> -->
+						<!-- <form action="" name="" method="">
+
 							<div class="flex">
 								<input type="text" id="name" class="input-form" name="name" autocomplete="off" required=""  placeholder="이름 or 업체명을 입력해 주세요." />
 								<input type="text" id="email" class="input-form" name="email" autocomplete="off" required=""  placeholder="이메일 주소를 입력해 주세요." />
@@ -327,7 +343,7 @@
 									<button id="" type="submit" class="btn-submit">문의하기</button>
 								</div>
 							</div>
-						</form>
+						</form> -->
 					</div>
 				</div>
 			</section>

@@ -36,6 +36,10 @@
 
 	  gtag('config', 'G-QMMG4BDM7K');
 	</script>
+	<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"  integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+	<script>
+		  Kakao.init('13e11e4629092eaf3328fc81ecb75691'); // 사용하려는 앱의 JavaScript 키 입력
+	</script>
 	<title>메뉴몬 - 메뉴 몬스터</title>	
 </head> 
 <body>
@@ -60,9 +64,12 @@
 							<li>
 								<a href="#introduce" onclick="ahchorMove(this); return false;">제품 소개서</a>
 							</li>
-							<li>								
+							<li>
+								<div id="kakao-talk-channel-chat-button"> </div>
 								<!-- <a href="#inquiry" onclick="ahchorMove(this); return false;">문의하기</a> -->
+								<!-- 
 								<a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdHIEyh-wsshK_WJXfBQ-cDGv3sW0aWX-2P4-8tRyq6Nj1XHw/viewform?usp=sf_link" >문의하기</a>
+								-->
 							</li>
 							<li class="width-check" style="display:none;">1</li>
 						</ul>
@@ -410,7 +417,11 @@
 <script>
 $(document).ready(function () {
 
-	
+
+	Kakao.Channel.createChatButton({
+		container: '#kakao-talk-channel-chat-button',
+  		channelPublicId: '_Iyeixj' // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
+	});
 
 	// introduce - swiper
 	// var introdeSwiper = new Swiper(".introduce .swiper-container", {

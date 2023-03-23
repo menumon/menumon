@@ -1442,14 +1442,15 @@ header .inner {
 }
 
 header .logo-wrap {
-  width: 16rem;
-  height: 4rem;
+  width: 15rem;
+  height: 2rem;
 }
 
 header .logo-wrap a {
   display: block;
   height: 100%;
-  background: url(../images/img_logo.png) center no-repeat;
+  /* background: url(../images/img_logo.png) center no-repeat; */
+  background: url(../images/menumon_logo.svg) center no-repeat;
   background-size: cover;
   font-size: 0;
 }
@@ -2298,11 +2299,13 @@ footer .inner .company-info .copyright {
     padding: 0 1.8rem;
   }
   header .inner .logo-wrap {
-    width: 10rem;
+    width: 15rem;
     height: 2rem;
-  }
+ }
   header .inner .logo-wrap a {
-    background-image: url(../images/mobile_logo.png);
+    /* background-image: url(../images/mobile_logo.png); */
+    background-image: url(../images/menumon_logo.svg);
+    
   }
   header .inner .nav-wrap .dimmed {
     display: block;

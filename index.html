@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"
     />
+
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="-1" />
     <meta http-equiv="Cache-Control" content="no-cache" />
@@ -61,7 +62,6 @@
       name="keywords"
       content="메뉴몬,menumon,메뉴몬,매뉴몬,apsbahs,menu monster, 테이블오더, 브이오더,에스오더,V오더,S오더,메뉴잇,테이블오더,무인결제,태블릿메뉴판,스마트오더,티오더,T오더,vorder,menuit,sorder,오더,order,온오더,onorder"
     />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -76,541 +76,810 @@
 
       gtag("config", "G-QMMG4BDM7K");
     </script>
-    <script
-      src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
-      integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      Kakao.init("13e11e4629092eaf3328fc81ecb75691"); // 사용하려는 앱의 JavaScript 키 입력
-    </script>
-    <style>
-      #kakao-talk-channel-chat-button > a > img {
-        vertical-align: middle !important;
-      }
-    </style>
+
     <title>메뉴몬 - 메뉴 몬스터</title>
-  </head>
-  <body>
-    <div class="wrap">
-      <header>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <!-- js -->
+    <script defer src="./assets/js/all.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- aos -->
+    <link rel="stylesheet" href="./assets/style/aos.css" />
+    <!-- swiper -->
+    <!-- <link rel="stylesheet" href="./assets/style/swiper-bundle.min.css"/>
+    <script src="./assets/js/swiper.min.js"></script> -->
+    <link  rel="stylesheet" href="./assets/libs/swiper-bundle.min.css"/>
+    <script src="./assets/libs/swiper-bundle.min.js"></script>
+
+    <!-- font -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="header">
         <div class="inner">
-          <div class="logo-wrap">
-            <a href="javascript:void(0);">로고</a>
-          </div>
-          <div class="nav-wrap">
-            <a href="javascript:void(0);" class="btn-menu"
-              >모바일 메뉴<span></span><span></span><span></span
-            ></a>
-            <div class="dimmed"></div>
-            <nav class="anchor-nav">
-              <ul>
-                <li>
-                  <a href="#visual" onclick="ahchorMove(this); return false;"
-                    >메뉴몬</a
-                  >
-                </li>
-                <li>
-                  <a href="#service" onclick="ahchorMove(this); return false;"
-                    >서비스 소개</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./assets/pdf/menumon_guide.pdf"
-                    onclick="ahchorMove(this); return false;"
-                    >제품 소개서</a
-                  >
-                </li>
-                <li>
-                  <div id="kakao-talk-channel-chat-button"></div>
-                  <!-- <a href="#inquiry" onclick="ahchorMove(this); return false;">문의하기</a> -->
-                  <!-- 
-								<a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdHIEyh-wsshK_WJXfBQ-cDGv3sW0aWX-2P4-8tRyq6Nj1XHw/viewform?usp=sf_link" >문의하기</a>
-								-->
-                </li>
-                <li class="width-check" style="display: none">1</li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <main>
-        <!-- 메뉴몬 -->
-        <section id="visual" class="visual">
-          <div class="section-inner animate top">
-            <div class="info-wrap">
-              <div class="info-title">
-                주문 누락 0건의 완성형 <strong>태블릿 메뉴판</strong>
-              </div>
-              <div class="info-desc">
-                <span class="color-E87443">메뉴몬 </span>
-                <span>
-                  <span>menu</span><span class="color-E87443">mon</span>
-                </span>
-              </div>
-              <div class="btn-wrap">
-                <a
-                  href="#inquiry"
-                  class="anchor"
-                  onclick="ahchorMove(this); return false;"
-                >
-                  <strong>바로 상담 하기</strong>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="btn-figure-main animate top is-mobile">
-            <img
-              class="img-figure-main"
-              src="./assets/images/figure_mobile_main.png"
-              alt="메뉴몬"
-            />
-            <a
-              href="./assets/pdf/menumon_guide.pdf"
-              onclick="ahchorMove(this); return false;"
-            >
-              <div class="btn-menumon-guide">메뉴몬 제안서 받기</div></a
-            >
-          </div>
-          <img
-            class="img-menumon-logo is-mobile"
-            src="./assets/images/menumon_logo_1.png"
-            alt="메뉴몬_로고"
-          />
-        </section>
-        <!-- //메뉴몬 -->
-        <!-- 서비스 소개 -->
-        <section id="service" class="service">
-          <div class="section-inner animate top">
-            <div class="info-wrap">
-              <div class="info-title">
-                메뉴몬과 사장님이<br />꿈꾸는
-                <strong class="color-E87443">새로운 응대 문화</strong> 는?
-              </div>
-              <div class="info-desc">
-                사장님의 새로운 식당 운영 솔루션, <br class="is-pc" />
-                <strong>‘태블릿 주문 서비스’</strong>를 통해<br />
-                고객응대 시간의 혁신적인 감소로<br class="is-pc" />
-                여유로움이 넘치는 식당을 운영하는 것입니다.
-              </div>
-            </div>
-            <div class="card-wrap">
-              <ul>
-                <li>
-                  <div>
-                    몇 명의 손님이 오더라도
-                    <strong>간편하게 터치만으로</strong>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    기다릴 필요없이 손님 스스로
-                    <strong>주문선택 후 결제까지</strong>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    인건비도 아끼고, 시간도 벌고
-                    <strong>전체적인 효율 증가</strong>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="btn-wrap">
-              <a href="./assets/pdf/menumon_guide.pdf" class="download">
-                <strong>제품 소개서 다운로드</strong>
-              </a>
-              <a
-                href="#inquiry"
-                class="anchor"
-                onclick="ahchorMove(this); return false;"
-              >
-                <strong>상담 신청하기</strong>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="before">
-          <div class="section-inner animate top">
-            <div class="card-wrap">
-              <ul class="list-01">
-                <li>
-                  <div>
-                    주문을 기다리는
-                    <strong> 대기시간 상승 </strong>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    매장내 직원과<br />
-                    손님으로 인한
-                    <strong> 혼잡함 발생 </strong>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    직원 수에 따른
-                    <strong> 인건비 상승 </strong>
-                  </div>
-                </li>
-              </ul>
-
-              <div class="pointer">메뉴몬 이전은 어땠을까요?</div>
-
-              <ul class="list-02">
-                <li>
-                  <div>
-                    손님과 직원들의
-                    <strong> 마찰 발생 가능성 </strong>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    직원의 실수로 인한
-                    <strong> 주문 누락 또는 오류 </strong>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    전체적인
-                    <strong> 효율의 감소 </strong>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- //서비스 소개 -->
-
-        <!-- 제품 소개서 -->
-        <section id="introduce" class="introduce">
-          <div class="section-inner animate top">
-            <div class="info-wrap">
-              <div class="info-title">
-                메뉴몬과 함께라면<br class="is-pc" />
-                <strong class="color-E87443">가능</strong>합니다.
-              </div>
-              <div class="info-desc">
-                매장의 규모에 상관없이<br class="is-flex" />
-                몇 명의 손님이 오더라도<br />
-                걱정없이 편하게<br class="is-flex" />
-                그리고 효율적으로 관리할 수 있습니다.
-              </div>
-            </div>
-            <div class="swiper-wrap">
-              <div class="swiper-container">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide animate top">
-                    <img
-                      src="./assets/images/slide_01.png"
-                      alt="슬라이드 이미지 01"
-                    />
-                  </li>
-                  <li class="swiper-slide animate top">
-                    <img
-                      src="./assets/images/slide_02.png"
-                      alt="슬라이드 이미지 02"
-                    />
-                  </li>
-                  <li class="swiper-slide animate top">
-                    <img
-                      src="./assets/images/slide_03.png"
-                      alt="슬라이드 이미지 03"
-                    />
-                  </li>
-                  <li class="swiper-slide animate top">
-                    <img
-                      src="./assets/images/slide_04.png"
-                      alt="슬라이드 이미지 04"
-                    />
-                  </li>
+            <nav class="navbar">
+                <div class="logo"><a href="/index.html"><img src="./assets/img/logo.svg"></a></div>
+                <button class="navbar-toggler pc_ham ham_wrap" type="button" onClick="allMenuToggle();">
+                    <div class="ham_btn">
+                        <span class="ham_bar"></span>
+                        <span class="ham_bar"></span>
+                        <span class="ham_bar"></span>
+                    </div>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item nav-item2">
+                      <a class="nav-link" href="#"">서비스 소개</a>
+                    </li>
+                    <li class="nav-item nav-item2">
+                      <a class="nav-link" href="./assets/pdf/menumon_guide.pdf">제품 소개서</a>
+                    </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="purpose">
-          <div class="section-inner animate top">
-            <div class="info-wrap">
-              <div class="info-title">
-                최적화된 매장 동선관리, 간편 결제,<br class="is-pc" />
-                매장 맞춤형 솔루션을 통해<br />
-                손님과 직원 간의<br class="is-pc" />
-                <strong class="color-E87443">응대 요소를 최소화</strong> 할 수
-                있습니다.
-              </div>
-              <div class="info-desc">
-                손님이 느끼는 쾌적한 경험은<br class="is-pc" />
-                그 무엇보다 뛰어난 효과를 불러올 것입니다.
-              </div>
-            </div>
-            <div class="card-wrap">
-              <ul>
-                <li>
-                  <div>
-                    <strong>비대면 주문</strong>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <strong>간편 호출</strong>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <strong>선결제 / 더치페이</strong>
-                  </div>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <div>
-                    <strong>POS연동</strong>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <strong>신메뉴 광고</strong>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <strong
-                      >맞춤형<br class="is-pc" />
-                      메인화면</strong
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="figure-wrap is-mobile">
-              <figure>
-                <img src="./assets/images/figure_left.png" alt="" />
-              </figure>
-              <figure>
-                <img src="./assets/images/figure_center.png" alt="" />
-              </figure>
-              <figure>
-                <img src="./assets/images/figure_right.png" alt="" />
-              </figure>
-            </div>
-            <div class="mobile-figure">
-              <ul>
-                <li class="animate top">
-                  <img src="./assets/images/figure_mobile_01.png" alt="" />
-                </li>
-                <li class="animate top">
-                  <img src="./assets/images/figure_mobile_02.png" alt="" />
-                </li>
-                <li class="animate top">
-                  <img src="./assets/images/figure_mobile_03.png" alt="" />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="find">
-          <div class="section-inner animate top">
-            <div class="figure-wrap is-mobile">
-              <figure class="bg"></figure>
-              <figure class="bg"></figure>
-              <figure class="bg"></figure>
-            </div>
-            <div class="info-wrap">
-              <div class="info-title">
-                <strong>
-                  새로운 주문 문화를 만들<br class="is-pc" />
-                  매장을 찾습니다.
-                </strong>
-              </div>
-              <div class="info-desc">
-                사장님의 고객 응대 수호자<br class="is-pc" />
-                <strong>‘메뉴몬’</strong>를 만나보세요!
-              </div>
-            </div>
-            <div class="btn-wrap">
-              <a href="./assets/pdf/menumon_guide.pdf" class="download">
-                <strong>제품 소개서 다운로드</strong>
-              </a>
-              <a
-                target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdHIEyh-wsshK_WJXfBQ-cDGv3sW0aWX-2P4-8tRyq6Nj1XHw/viewform?usp=sf_link"
-                class="anchor"
-              >
-                <strong>상담 신청하기</strong>
-              </a>
-            </div>
-          </div>
-        </section>
-        <!-- //제품 소개서 -->
-        <!-- 문의하기 -->
-        <section id="inquiry" class="inquiry">
-          <div class="section-inner animate top">
-            <div class="info-wrap">
-              <div class="info-title">
-                <strong> 지금 바로 문의하기 </strong>
-              </div>
-              <div class="info-desc">
-                테이블 오더 서비스 메뉴몬에 대해<br class="is-flex" />
-                궁금한 점이나<br />
-                서비스 이용에 대해 관심이 있으시다면<br class="is-flex" />
-                문의를 남겨주세요.
-              </div>
-            </div>
-            <div class="form-wrap">
-              <!-- <a href="#inquiry" class="anchor" onclick="ahchorMove(this); return false;">
-							<strong>상담 신청하기</strong>
-						</a> -->
-
-              <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHIEyh-wsshK_WJXfBQ-cDGv3sW0aWX-2P4-8tRyq6Nj1XHw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe> -->
-              <form
-                action="https://docs.google.com/forms/d/e/1FAIpQLSdHIEyh-wsshK_WJXfBQ-cDGv3sW0aWX-2P4-8tRyq6Nj1XHw/viewform?usp=sf_link"
-                name=""
-                method="GET"
-                target="blank"
-              >
-                <!-- <div class="flex">
-								<input type="text" id="name" class="input-form" name="name" autocomplete="off" required=""  placeholder="이름 or 업체명을 입력해 주세요." />
-								<input type="text" id="email" class="input-form" name="email" autocomplete="off" required=""  placeholder="이메일 주소를 입력해 주세요." />
-							</div>
-							<div class="flex">
-								<textarea name="" id="message" cols="30" rows="10" autocomplete="off" required="" placeholder="문의내용을 입력해 주세요. 확인 후 이메일 주소로 회신 드리겠습니다."></textarea>
-							</div> -->
-                <div class="flex submit">
-                  <div class="btn-wrap">
-                    <button id="" class="btn-submit">문의하기</button>
-                  </div>
+                <div class="hd_pop" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSdHIEyh-wsshK_WJXfBQ-cDGv3sW0aWX-2P4-8tRyq6Nj1XHw/viewform?usp=sf_link" target="_blank">상담/견적 신청하기</a></div>
+                <div class="nav-side">
+                    <div class="side-top">
+                        <button class="navbar-toggler pc_ham ham_wrap" type="button" onClick="allMenuToggle();">
+                            <div class="ham_btn">
+                                <span class="ham_bar"></span>
+                                <span class="ham_bar"></span>
+                                <span class="ham_bar"></span>
+                            </div>
+                        </button>
+                        <div class="logo"><a href="#"><img src="./assets/img/logo.svg"></a></div>
+                    </div>
+                    <div class="side-m">
+                        <div class="side-tit">메뉴몬 도입으로<br/> 더욱 편하게 가게를 운영하세요!</div>
+                        <div class="btn-wrap">
+                            <div class="hd_pop side_hd_pop" onclick="allMenuToggle();document.getElementById('contact_form').scrollIntoView();">상담/견적<br>신청하기</div>
+                            <a href="http://pf.kakao.com/_Iyeixj/chat" target="_blank" class="side-kakao">
+                                <img src="./assets/img/kakao.png">
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="navbar-mo">
+                        <!-- <li class="nav-item">
+                            <img src="./assets/img/side_1.svg">
+                            <a class="nav-link">서비스 소개</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <img src="./assets/img/side_2.svg">
+                            <a class="nav-link" href="./assets/pdf/menumon_guide.pdf">제품 소개서</a>
+                        </li>
+                    </ul>
                 </div>
-              </form>
-            </div>
-          </div>
-        </section>
-        <!-- //문의하기 -->
-      </main>
-      <footer>
-        <div class="inner">
-          <h2>주식회사 세령</h2>
-          <div class="company-info">
-            <ul>
-              <li><strong>대표</strong> 박소영</li>
-              <li><strong>사업자등록번호</strong>188-86-00532</li>
-              <li>
-                <strong>통신판매업 신고번호</strong> 제 2023-서울금천-0541 호
-                <a
-                  target="_blank"
-                  href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1888600532"
-                  >[통신판매 사업자 조회]</a
-                >
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <strong>대표전화</strong
-                ><a href="tel:1660-3505">1660-3505</a>
-              </li>
-              <li>
-                <strong>팩스번호</strong
-                ><a href="tel:0504-095-7674">0504-095-7674</a>
-              </li>
-              <li>
-                <strong>이메일</strong
-                ><a href="mailto:help@menumon.kr">help@menumon.kr</a>
-              </li>
-              <li>
-                <address>서울시 금천구 벚꽃로 24길 13, 701호</address>
-              </li>
-            </ul>
-            <div class="copyright">
-              ⓒ2016. Se-Ryoung Inc. All right reserved.
-            </div>
-          </div>
+            </nav>
         </div>
-      </footer>
+    </header>
+    
+    <div class="kakao-wrap">
+        <div class="kakao-bx">
+            <div onClick="closeBtn(1)" class="closeBtn"><img src="./assets/img/close.png"></div>
+            <div class="kakao-tit">메뉴몬에게 궁금하신 점은<br/>아래 톡상담을 이용해주세요.</div>
+        </div>
+        <a href="http://pf.kakao.com/_Iyeixj/chat" target="_blank">
+            <img src="./assets/img/kakao.png" class="kakao-img-pc">
+            <img src="./assets/img/kakao_m.png" class="kakao-img-m">
+        </a>
     </div>
+    
+    <main class="main">
+        <div class="main1">
+            <div class="inner">
+                <div class="c-row">
+                    <div class="c-4 c-md-4 c-sm-12">
+                        <div class="txtcont cont">
+                            <p class="txt1">메뉴몬</p>
+                            <p class="txt2">주문누락 0건의<br>우리가게 수호신</p>
+                            <a class="main1_btn" onclick="document.getElementById('contact_form').scrollIntoView();">상담/견적 신청하기</a>
+                        </div>
+                    </div>
+                    <div class="c-8 c-md-8 c-sm-12">
+                        <div class="imgcont cont"><img src="./assets/img/main1_re.png" class="dynamic"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="inner">
+                <p class="txt1">
+                    돈이 오고가는 서비스는 첫째도 안정성, 둘째도 안정성입니다. <br>
+                    개발경력 25년 이상의 개발진이 만든 &lt;메뉴몬&gt;은<br>
+                    증권사 프로그램 수준 이상의 안정성을 담보합니다.
+                </p>
+                <div class="img"><img src="./assets/img/index_logo1.png"></div>
+            </div>
+        </div>
+        <div class="main3">
+            <div class="inner">
+                <p class="txt1 txt-y txt">메뉴몬 도입효과</p>
+                <p class="tit t-center">인건비 부담이 사라집니다</p>
+                <div class="contbox">
+                    <div class="cont">
+                        <div class="card-wrap">
+                            <div class="back">
+                                <div class="card-tit">홀 직원<br class="m-br"> </br>1인 급여</div>
+                                <img src="./assets/img/main2_1.png">
+                                <div class="card-txt">
+                                    월급 <strong>201만 580원</strong><br/>
+                                    <span>(주 40시간/ 2023년 최저시급)</span>
+                                </div>
+                            </div>
+                            <div class="front">
+                                <div class="card-tit">메뉴몬 이용료</div>
+                                <img src="./assets/img/main2_2.png">
+                                <div class="card-txt">월 이용료 <strong>15만원</strong><br/>
+                                    <span>(10대 기준)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont txtcont">
+                        <div class="arrow">
+                            <div class="arrow_img"><img src="./assets/img/arrow1.png"></div>
+                            <div class="arrow_img"><img src="./assets/img/arrow2.png"></div>
+                            <div class="arrow_img"><img src="./assets/img/arrow3.png"></div>
+                        </div>
+                        <div class="bubcont">
+                            <div class="bubbox">직원 1인당<br>약 186만원 절약</div>
+                            <div class="num">-92.53%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main4">
+            <div class="inner">
+                <div class="cont imgcont">
+                    <p class="tit">직원 관리 스트레스에서<br>해방되세요!</p>
+                    <div class="img">
+                        <img src="./assets/img/main4_img1.png">
+                        <div class="abcont">
+                            <div class="abs_bub">
+                                <p class="txt1">A1번 테이블<br>주문이 들어왔습니다!</p>
+                                <div class="imgbox"><img src="./assets/img/bell.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont bubblecont">
+                    <div class="bubble">알바생이 불친절해요!</div>
+                    <div class="bubble">알바생이 주문을 누락했어요!</div>
+                    <div class="bubble">구인공고는 시간낭비에요!</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="main5 section">
+            <div class="inner" data-aos="fade-up" data-aos-duration="700">
+                <div class="c-row">
+                    <div class="c-12">
+                        <p class="tit t-center">타사 서비스는 어떨까요?</p>
+                        <ul class="main5-grp">
+                            <li>
+                                <div class="img-bx"><img src="./assets/img/main5_1.png"></div>
+                                <div class="txt">기기가 먹통인데 배상해주지 않았어요!</div>
+                            </li>
+                            <li>
+                                <div class="img-bx"><img src="./assets/img/main5_2.png"></div>
+                                <div class="txt">서버가 왜 이렇게 자주 멈추죠?</div>
+                            </li>
+                            <li>
+                                <div class="img-bx"><img src="./assets/img/main5_3.png"></div>
+                                <div class="txt">손님이 주문이 자주 누락돼요!</div>
+                            </li>
+                            <li>
+                                <div class="img-bx"><img src="./assets/img/main5_4.png"></div>
+                                <div class="txt">메뉴나 가격을 바꾸려면 며칠씩 걸려요.</div>
+                            </li>
+                        </ul>
+                        <div class="com-bx">
+                            시장 이미 진출한 경쟁 서비스들이 있으나,<br/><strong>취약한 안정성 및 낮은 품질</strong>로 인해 <br class="m-br"/>고객들의 불만이 심각한 상황
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main6 section">
+            <div class="inner">
+                <div class="c-row">
+                    <div class="c-7 c-md-6 c-sm-12">
+                        <div class="tit">
+                            안정성을 최우선 과제로 개발하여<br/>
+                            주문 누락 및 결제 오류가<br/>
+                            발생하지 않는 서비스
+                        </div>
+                        <div class="txt">
+                            <span>보안 및 금융 서비스등 전문 개발 경력 25년 이상의</span><br/>
+                            개발팀이 제작한 메뉴몬을 만나보세요.
+                        </div>
+                    </div>
+                    <div class="c-5 c-md-6 c-sm-12">
+                        <div class="one-wrap">
+                            <div class="one-top" data-aos="fade-up" data-aos-duration="700">
+                                <span>안정적인 서비스</span>
+                                <div class="one-tit">인터넷이 끊겨도<br/>사용 가능한 오더</div>
+                            </div>
+                            <div class="one-m" data-aos="fade-up" data-aos-duration="1000">
+                                <span>자체 개발 솔루션</span>
+                                <div class="one-tit">금융 서비스 급<br/>안전성 보장</div>
+                            </div>
+                            <div class="one-bot" data-aos="fade-up" data-aos-duration="1400">
+                                <div class="one-tit">빠른<br/>CS 응대</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main5 section">
+            <div class="inner" data-aos="fade-up" data-aos-duration="700">
+                <div class="c-row">
+                    <div class="c-12">
+                        <p class="tit t-center">이런 기능 있었으면 좋겠는데...???</p>
+                        <div class="com-bx">
+                            필요한 기능이 있으시다면?<br/><strong style="color:#ffcf5d;">만들어 드려요</strong>
+                            <br> 많은 분들이 함께 잘 사용할 수 있는 기능 우선!
+                            <br> 꼭! 필요한 기능라고 하시면 최대한 빨리 오류 없이!
+                            <br> 그렇게 해서 추가 기능 개발만 수십개...
+                            <!-- <br>불편한 기능 있다고요? <br/><strong style="color:#ffcf5d;">개선해 드립니다!!</strong> -->
+                            <!-- <br>저희는 원래 예전부터 지금까지 쭈욱~ S/W만 전문으로 개발하던 곳이니까요
+                            <br>비용이요? 무료입니다 -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main7 section">
+            <div class="inner">
+                <div class="c-row">
+                    <div class="tit">메뉴몬 주문앱 (손님용)</div>
+                    <div class="txt">간편하게 터치만으로,<br/>기다릴 필요 없이 손님 스스로 결제까지!</div>
+                    <div class="c-12">
+                        <div id="visual">
+                            <div class="swiper-container x-swiper x-swiper-m">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="card-wrap">
+                                            <div class="card-t">
+                                                <div class="card-tit">01. 메인 화면</div>
+                                                <div class="card-txt">영어, 중국어 등 6개 국어를 지원합니다.</div>
+                                            </div>
+                                            <img src="./assets/img/main7_1.png">
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="card-wrap">
+                                            <div class="card-t">
+                                                <div class="card-tit">02. 메뉴 상세</div>
+                                                <div class="card-txt">메뉴 및 옵션을 선택하고 주문해요.</div>
+                                            </div>
+                                            <img src="./assets/img/main7_2.png">
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="card-wrap">
+                                            <div class="card-t">
+                                                <div class="card-tit">03. 장바구니</div>
+                                                <div class="card-txt">내 주문 내역을 확인하고, 후불 옵션을 선택해보세요!</div>
+                                            </div>
+                                            <img src="./assets/img/main7_3.png">
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="card-wrap">
+                                            <div class="card-t">
+                                                <div class="card-tit">04. 서비스 요청</div>
+                                                <div class="card-txt">말하기 쉽지 않았던 물수건, 앞치마들을 요청하세요.</div>
+                                            </div>
+                                            <img src="./assets/img/main7_4.png">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main8 section" data-aos="fade-up" data-aos-duration="800">
+            <div class="inner">
+                <div class="c-row">
+                    <div class="c-12 m-12">
+                        <div class="tit">메뉴몬 관리앱 (사장님용)</div>
+                        <div class="txt">매장을 편하고 효율적으로 관리해보세요.</div>
+                    </div>
+                    <div class="c-5 c-md-6 c-sm-12">
+                        <div class="main8-img-bx main8-img-bx1 on">
+                            <img src="./assets/img/main8_1.png" class="main8_1 main_8_ main_8_1 ">
+                        </div>
+                        <div class="main8-img-bx main8-img-bx2">
+                            <img src="./assets/img/main8_2.png" class="main_8_ main_8_2">
+                        </div>
+                        <div class="main8-img-bx main8-img-bx3">
+                            <img src="./assets/img/main8_3.png" class="main_8_ main_8_3">
+                        </div>
+                        <div class="main8-img-bx main8-img-bx4">
+                            <img src="./assets/img/main8_4.png" class="main_8_ main_8_4">
+                        </div>
+                        <img src="./assets/img/main8_1_m.png" class="main8_2">
+                    </div>
+                    <div class="c-7 c-md-6 c-sm-12">
+                        <div class="tit">메뉴몬 관리앱 (사장님용)</div>
+                        <div class="txt">매장을 편하고 효율적으로 관리해보세요.</div>
+                        <div class="list-wrap">
+                            <ul class="main8-grp">
+                                <li class="main8-item main8-item1 active" onClick="tabBtn(1)">
+                                    <img src="./assets/img/main8_icon1.png">
+                                    <div>
+                                        <div class="tit">실시간 주문 확인</div>
+                                        <div class="txt">손님의 주문을 실시간으로 확인해보세요.</div>
+                                    </div>
+                                </li>
+                                <li class="main8-item main8-item2" onClick="tabBtn(2)">
+                                    <img src="./assets/img/main8_icon2.png">
+                                    <div>
+                                        <div class="tit">상품 품절 처리 및 가격 수정</div>
+                                        <div class="txt">내가 원하는 가격으로 쉽게 수정해요.</div>
+                                    </div>
+                                </li>
+                                <li class="main8-item main8-item3" onClick="tabBtn(3)">
+                                    <img src="./assets/img/main8_icon3.png">
+                                    <div>
+                                        <div class="tit">전체 테블릿 개별 관리</div>
+                                        <div class="txt">모든 주문 태블릿의 상태를 한눈에 보세요.</div>
+                                    </div>
+                                </li>
+                                <li class="main8-item main8-item4" onClick="tabBtn(4)">
+                                    <img src="./assets/img/main8_icon4.png">
+                                    <div>
+                                        <div class="tit">주문 태블릿 상태 변경(open/Ready/Close)</div>
+                                        <div class="txt">빠르게 태블릿의 상태를 변경해요.</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="main8-grp2">
+                                <li class="main8-item main8-item1 active">1</li>
+                                <li class="main8-item main8-item2">2</li>
+                                <li class="main8-item main8-item3">3</li>
+                                <li class="main8-item main8-item4">4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main9 section">
+            <div class="inner">
+                <div class="c-row">
+                    <div class="tit t-center" data-aos="fade-up" data-aos-duration="300">기존의 POS/VAN을<br class="m-br"> 변경없이 사용하세요</div>
+                    <div class="txt t-center"></div>
+                    <div class="c-6 c-md-6 c-sm-12" data-aos="fade-up" data-aos-duration="500">
+                        <div class="tag-bx">연동 가능 POS</div>
+                        <ul class="main9-grp main9-grp-l">
+                            <li>
+                                <img src="./assets/img/main9_l_1.png" class="main9_l_1">
+                                <div class="9bag">KS POS</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_l_2.png" class="main9_l_2">
+                                <div class="9bag">OASIS POS</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_l_3.png" class="main9_l_3">
+                                <div class="9bag">EASY POS</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_l_4.png" class="main9_l_4">
+                                <div class="9bag">UNION POS</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_l_5.png" class="main9_l_5">
+                                <div class="9bag">HYPHEN POS</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_l_6.png" class="main9_l_6">
+                                <div class="9bag">OK POS/KIS</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_l_7.png" class="main9_l_7">
+                                <div class="9bag">Magic POS</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_l_8.png" class="main9_l_8">
+                                <div class="9bag">Annecy POS</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_l_9.png" class="main9_l_9">
+                                <div class="9bag">SMILE POS</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_l_10.png" class="main9_l_10">
+                                <div class="9bag">FIRST POS</div>
+                            </li>
+                            <li>
+                                <span>연동 예정</span>
+                                <img src="./assets/img/main9_l_11.png" class="main9_r_11">
+                                <div class="9bag">OK POS</div>
+                            </li>
+                            <li>
+                                <span>연동 예정</span>
+                                <img src="./assets/img/main9_l_12.png" class="main9_r_12">
+                                <div class="9bag">MATE POS</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-6 c-md-6 c-sm-12" data-aos="fade-up" data-aos-duration="500">
+                        <div class="tag-bx">연동 가능 VAN</div>
+                        <ul class="main9-grp main9-grp-r">
+                            <li>
+                                <img src="./assets/img/main9_r_1.png" class="main9_r_1">
+                                <div class="9bag">한국정보통신(KICC)</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_r_2.png" class="main9_r_2">
+                                <div class="9bag">나이스정보통신(NICE)</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_r_3.png" class="main9_r_3">
+                                <div class="9bag">케이에스넷(KSNET)</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_r_4.png" class="main9_r_4">
+                                <div class="9bag">스마트로(SMARTRO)</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_r_5.png" class="main9_r_5">
+                                <div class="9bag">KIS정보통신(KIS)</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_r_6.png" class="main9_r_6">
+                                <div class="9bag">코세스(KOCES)</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_r_7.png" class="main9_r_7">
+                                <div class="9bag">코밴(KOVAN)</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_r_8.png" class="main9_r_8">
+                                <div class="9bag">섹타나인(SPC)</div>
+                            </li>
+                            <li>
+                                <img src="./assets/img/main9_r_9.png" class="main9_r_9">
+                                <div class="9bag">한국결제네트웍스(KPN)</div>
+                            </li>
+                            <li>
+                                <!-- <span>연동 진행 중</span> -->
+                                <img src="./assets/img/main9_r_10.png" class="main9_r_10">
+                                <div class="9bag">파이서브</div>
+                            </li>
+                            <li>
+                                <!-- <span>연동 진행 중</span> -->
+                                <img src="./assets/img/main9_r_11.png" class="main9_r_11">
+                                <div class="9bag">퍼스트 데이터</div>
+                            </li>
+                            <li>
+                                <!-- <span>연동 진행 중</span> -->
+                                <img src="./assets/img/main9_r_12.png" class="main9_r_12">
+                                <div class="9bag">다우데이터(DAOU)</div>
+                            </li>
+                            <li>
+                                <span>연동 진행 중</span>
+                                <img src="./assets/img/main9_r_13.jpg" class="main9_r_13">
+                                <div class="9bag">다우데이터(DAOU)</div>
+                            </li>
 
-    <script src="./assets/js/lib/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/lib/swiper.min.js"></script>
-    <script src="./assets/js/ui.js"></script>
+                        </ul>
+                    </div>
+                    <div class="txt t-center"></div>
+                    <div class="txt t-center">이외 추가 연동 작업 진행 중입니다.</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="main10 section">
+            <div class="inner">
+                <div class="c-row">
+                    <div class="tit">많은 고객님이<br class="m-br"> 메뉴몬과 함께하고 있습니다</div>
+                    <div class="txt">메뉴몬의 실제 매장 사진입니다.</div>
+                    <div class="txt">(요청하시면 계시는 곳 부근 운영중인 매장 알려드립니다! 찾아가셔서 직접 보고 결정하셔도 좋습니다.)</div>
+                    <div class="c-12">
+                        <div id="visual">
+                            <div class="swiper-container main10-swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <ul class="swiper-list-grp">
+                                            <li><img src="./assets/img/main10_1_1.png"><div class="list-tit">금별맥주</div></li>
+                                            <li><img src="./assets/img/main10_1_2.png"></li>
+                                            <li><img src="./assets/img/main10_1_3.png"></li>
+                                            <li><img src="./assets/img/main10_1_4.png"><div class="list-tit">뉴욕야시장 강릉 남항진해변점</div></li>
+                                            <li><img src="./assets/img/main10_1_5.png"></li>
+                                            <li><img src="./assets/img/main10_1_6.png"></li>
+                                            <li><img src="./assets/img/main10_1_7.png"><div class="list-tit">독술이</div></li>
+                                            <li><img src="./assets/img/main10_1_8.png"></li>
+                                            <li><img src="./assets/img/main10_1_9.png"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <ul class="swiper-list-grp">
+                                            <li><img src="./assets/img/main10_2_1.png"><div class="list-tit">뉴욕야시장 김해 삼계점</div></li>
+                                            <li><img src="./assets/img/main10_2_2.png"></li>
+                                            <li><img src="./assets/img/main10_2_3.png"></li>
+                                            <li><img src="./assets/img/main10_2_4.png"><div class="list-tit">뉴욕야시장 부산 당감점</div></li>
+                                            <li><img src="./assets/img/main10_2_5.png"></li>
+                                            <li><img src="./assets/img/main10_2_6.png"></li>
+                                            <li><img src="./assets/img/main10_2_7.png"><div class="list-tit">샤브팔팔</div></li>
+                                            <li><img src="./assets/img/main10_2_8.png"></li>
+                                            <li><img src="./assets/img/main10_2_9.png"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <ul class="swiper-list-grp">
+                                            <li><img src="./assets/img/main10_3_1.png"><div class="list-tit">옛날불고기 등촌점</div></li>
+                                            <li><img src="./assets/img/main10_3_2.png"></li>
+                                            <li><img src="./assets/img/main10_3_3.png"></li>
+                                            <li><img src="./assets/img/main10_3_4.png"><div class="list-tit">이자카야 만지</div></li>
+                                            <li><img src="./assets/img/main10_3_5.png"></li>
+                                            <li><img src="./assets/img/main10_3_6.png"></li>
+                                            <li><img src="./assets/img/main10_3_7.png"><div class="list-tit">커리 146</div></li>
+                                            <li><img src="./assets/img/main10_3_8.png"></li>
+                                            <li><img src="./assets/img/main10_3_9.png"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <ul class="swiper-list-grp">
+                                            <li><img src="./assets/img/main10_4_1.png"><div class="list-tit">트레비어 명지점</div></li>
+                                            <li><img src="./assets/img/main10_4_2.png"></li>
+                                            <li><img src="./assets/img/main10_4_3.png"></li>
+                                            <li><img src="./assets/img/main10_4_4.png"><div class="list-tit">뉴욕야시장 아산 탕정점</div></li>
+                                            <li><img src="./assets/img/main10_4_5.png"></li>
+                                            <li><img src="./assets/img/main10_4_6.png"></li>
+                                            <li><img src="./assets/img/main10_4_7.png"><div class="list-tit">뉴욕야시장 화성시청점</div></li>
+                                            <li><img src="./assets/img/main10_4_8.png"></li>
+                                            <li><img src="./assets/img/main10_4_9.png"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination swiper-pagination2"></div>
+                                <div class="swiper-button-next next-btn"></div>
+                                <div class="swiper-button-prev prev-btn"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main11 section">
+            <div class="inner">
+                <div class="tit">메뉴몬의<br class="m-br"> 다음 파트너가 되어보세요</div>
+            </div>
+            <div class="animated-wrap">
+                <div class="track">
+                <div class="content">
+                        <img src="./assets/img/main11.png">
+                        <img src="./assets/img/main11.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main12 section">
+            <div class="inner" data-aos="fade-up" data-aos-duration="700">
+                <div class="c-row t-center">
+                    <div class="c-12">
+                        <div class="tit">메뉴몬 기본 구성품</div>
+                        <div class="txt">10.1 inch 안드로이드 태블릿<br class="m-br"> + 메뉴몬 소프트웨어<br class="m-br"> + 거치대(탁상형/고정형)</div>
+                        <img src="./assets/img/main12.png">
+                    </div>
+                    <div class="c-12">
+                        <div class="mb30">
+                            <div class="tit">메뉴몬 기본 구성품</div>
+                            <div class="bag">10대 이상 계약 시</div>
+                            <div class="txt t-center">IP타임 무선공유기 1대<br class="m-br"> + 대용량 보조배터리 대당 1대<br class="m-br"> + 비상 교체용 스페어 태블릿 1대</div>
+                            <img src="./assets/img/main12_2.png">
+                        </div>
+                        <div>
+                            <div class="bag">20대 이상 계약 시</div>
+                            <div class="txt t-center">IP타임 무선공유기 1대<br class="m-br"> + 대용량 보조배터리 대당 1대<br class="m-br"> + 비상 교체용 스페어 태블릿 1대<br class="m-br"> + 6구 멀티탭<br/>+ 충전 어뎁터<br class="m-br"> + IP 타임 천장형 공유기<br class="m-br"> + 천장형 공유기 무상 가설(20만원 상당)</div>
+                            <img src="./assets/img/main12_3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main13 section">
+            <div class="inner">
+                <div class="c-row t-center">
+                    <div class="c-12">
+                        <div class="tit">스마트 줄서기 서비스<br class="m-br"> &lt;메뉴몬 웨이팅&gt;</div>
+                        <div class="txt">메뉴몬의 웨이팅 서비스로<br class="m-br"> 효율적인 대기 손님 관리를 해보세요!</div>
+                        <img src="./assets/img/main13_1.png">
+                    </div>
+                    <div class="c-4 c-md-4 c-sm-12" data-aos="fade-up" data-aos-duration="700">
+                        <div class="card-wrap">
+                            <div class="card-t"><img src="./assets/img/main13_2.png"></div>
+                            <div class="card-b">
+                                <div class="card-tit">인건비 절감</div>	
+                                <div class="card-txt">
+                                    대기 명부를 수기로 작성하거나 직원이 일일이 고객에게 전화를 걸지 않아도 되기 때문에 인건비가 절감됩니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-4 c-md-4 c-sm-12" data-aos="fade-up" data-aos-duration="700">
+                        <div class="card-wrap">
+                            <div class="card-t"><img src="./assets/img/main13_3.png"></div>
+                            <div class="card-b">
+                                <div class="card-tit">고객의 편의</div>	
+                                <div class="card-txt">
+                                    매장앞에 줄을 서서 기다려야 하는<br/>고객의 불편이 사라집니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-4 c-md-4 c-sm-12" data-aos="fade-up" data-aos-duration="700">
+                        <div class="card-wrap">
+                            <div class="card-t"><img src="./assets/img/main13_4.png"></div>
+                            <div class="card-b">
+                                <div class="card-tit">회전율 증가</div>	
+                                <div class="card-txt">
+                                    간편한 대기등록과 즉각적 입장 알림을<br/> 통해 매장의 회전율이 올라갑니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main14 section" id="contact_form">
+            <div class="inner" data-aos="fade-up" data-aos-duration="1000">
+                <div class="c-row">
+                    <div class="c-12">
+                        <div class="tit">메뉴몬에 관심이 있다면?</div>
+
+                        <div class="tit">대표번호 <u><a href="tel:1600-3505">1600-3505</a></u> 또는 </div>
+                        
+
+                        <form id="mainfrm" name="mainfrm" method="get"  target="_blank"  action="https://docs.google.com/forms/d/e/1FAIpQLSdHIEyh-wsshK_WJXfBQ-cDGv3sW0aWX-2P4-8tRyq6Nj1XHw/viewform?usp=sf_link">
+                            <div class="form-wrap">
+                                <div class="form-tit">쉽고 빠르게 <br class="m-br"/><span>메뉴몬 상담/견적 신청을 해보세요</span></div>
+                                <div class="form-txt">사장님의 정보를 바탕으로<br class="m-br"> 메뉴몬이 친절하게 상담해드리겠습니다.</div>
+                                <!-- <ul class="form-grp">
+                                    <li>
+                                        <label for="wr_4">지역</label>
+                                        <select name="area" id="wr_2" class="form-input" required>
+                                            <option value="-">지역을 선택해주세요</option>
+                                            <option value="서울">서울</option>
+                                            <option value="부산">부산</option>
+                                            <option value="대구">대구</option>
+                                            <option value="인천">인천</option>
+                                            <option value="광주">광주</option>
+                                            <option value="대전">대전</option>
+                                            <option value="울산">울산</option>
+                                            <option value="세종">세종</option>
+                                            <option value="경기">경기</option>
+                                            <option value="강원">강원</option>
+                                            <option value="충북">충북</option>
+                                            <option value="충남">충남</option>
+                                            <option value="전북">전북</option>
+                                            <option value="전남">전남</option>
+                                            <option value="경북">경북</option>
+                                            <option value="경남">경남</option>
+                                            <option value="제주">제주</option>
+                                          </select>
+                                    </li>                                    
+                                    <li>
+                                        <label for="wr_1">매장명</label>
+                                        <input type="text" name="store_name" id="store_name" placeholder="매장명을 적어주세요" class="form-input" required>
+                                    </li>
+                                    <li>
+                                        <label for="wr_2">테이블 수</label>
+                                        <input type="text" name="table_cnt" id="table_cnt" placeholder="테이블 수를 적어주세요" class="form-input" required>
+                                    </li>
+                                    <li>
+                                        <label for="wr_3">연락처</label>
+                                        <input type="number" name="phone" id="phone" placeholder="ex)010-1234-5678" class="form-input" required>
+                                    </li>
+                                    <li>
+                                        <label for="wr_2">기타 전달사항</label>
+                                        <input type="text" name="comment" id="comment" placeholder="기타 전달사항" class="form-input">
+                                    </li>
+        
+                                    <li>
+                                        <div class="readme-txt">개인정보 취급 방침</div>
+                                        <div class="readme-bx" readonly>
+                                            <p>
+                                            <span>수집하는 개인정보의 항목</span><br/>
+                                            회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br/><br/>
+        
+                                            · 수집항목 : 성함, 매장명, 테이블 갯수, 지역명, 연락처<br/>
+                                            · 개인정보 수집방법 :상담문의<br/><br/>
+        
+        
+                                            <span>개인정보의 수집 및 이용목적</span><br/>
+                                            회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br/>
+        
+                                            · 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산<br/>
+                                            · 구매 및 요금 결제 , 물품배송 또는 청구지 등 발송<br/><br/>
+        
+                                            <span>회원 관리</span><br/>
+                                            · 회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 불량회원의 부정 이용 방지와 비인가 사용 방지 , 가입 의사 확인 , 연령확인<br/><br/>
+        
+                                            <span>개인정보의 보유 및 이용기간</span><br/>
+                                            회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.</p>
+                                        </div>
+                                        <div class="chkbox_div" style="position: relative;">
+                                            <input type="checkbox" id="chk_1" name="chk_1" value="" required style="display: block;position: absolute;top: 10px;left: 10px;width: 1px;height: 1px;font-size: 0;opacity: 0;z-index: -1;">
+                                            <label for="chk_1" style="font-size: 16px;"><i></i>(필수) <span>개인정보 수집</span>에 동의합니다.</label>
+                                        </div>
+                                    </li>
+                                </ul> -->
+                                
+                                <button type="submit" class="sbm-btn">상담/견적 신청하기</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="inner">
+            <div class="c-row">
+                <div class="c-12">
+                    <div class="f-logo">
+                        <a href=""><img src="./assets/img/menumon_logo.svg" alt=""></a>
+                        <div>주식회사 세령</div>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="f-tit">대표자명</div>
+                            <div class="f-txt">박소영</div>
+                        </li>
+                        <li>
+                            <div class="f-tit">사업자등록번호</div>
+                            <div class="f-txt">188-86-00532</div>
+                        </li>
+                        <li>
+                            <div class="f-tit">본사</div>
+                            <div class="f-txt">서울시 금천구 벚꽃로 24길 13, 701호</div>
+                        </li>
+                        <li>
+                            <div class="f-tit">이메일</div>
+                            <div class="f-txt">help@menumon.kr</div>
+                        </li>
+                        <li>
+                            <div class="f-tit">대표번호</div>
+                            <div class="f-txt">1600-3505</div>
+                        </li>
+                        <li>
+                            <div class="f-tit">통신판매업 신고번호</div>
+                            <div class="f-txt">제 2023-서울금천-0541 호</div>
+                        </li>                        
+
+                        <li>
+                            <a href="./provision.html">
+                                <div class="f-tit">이용약관</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privacy.html">
+                                <div class="f-tit">개인정보 처리방침</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/aos.js"></script>
     <script>
-      $(document).ready(function () {
-        Kakao.Channel.createChatButton({
-          container: "#kakao-talk-channel-chat-button",
-          channelPublicId: "_Iyeixj", // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
-        });
-
-        // introduce - swiper
-        // var introdeSwiper = new Swiper(".introduce .swiper-container", {
-        // 		slidesPerView: "auto",
-        // 		initialSlide :slideInx,
-        // 		loop: true,
-        // 		centeredSlides: true,
-        // 		roundLengths: true,
-        // 		speed: 1000,
-        // 		autoplay: {
-        // 			delay: 2500,
-        // 			disableOnInteraction: false,
-        // 		},
-        // 		on: {
-        // 			activeIndexChange: function () {
-        // 				slideInx = this.realIndex; //현재 슬라이드 index 갱신
-        // 			}
-        // 		},
-        // });
-
-        // $('.introduce .swiper-slide').on('mouseover', function(){
-        // 	introdeSwiper.autoplay.stop();
-        // })
-
-        // $('.introduce .swiper-slide').on('mouseout', function(){
-        // 	introdeSwiper.autoplay.start();
-        // })
-
-        $(window).resize(function () {
-          // keep an eye on viewport size changes
-          breakpoint.breakpointChecker;
-        }); // resize
-      });
-
-      const breakpoint = window.matchMedia("(min-width:1024px)");
-      let introdeSwiper;
-
-      const breakpointChecker = function () {
-        // console.log(breakpoint.matches)
-        if (breakpoint.matches === true) {
-          enableSwiper();
-          return;
-        } else if (breakpoint.matches === false) {
-          if (introdeSwiper !== undefined) {
-            introdeSwiper.destroy();
-          }
-          return;
-        }
-      };
-
-      const enableSwiper = function () {
-        var slideInx = 0;
-        introdeSwiper = new Swiper(".introduce .swiper-container", {
-          slidesPerView: "auto",
-          initialSlide: slideInx,
-          loop: true,
-          centeredSlides: true,
-          roundLengths: true,
-          speed: 1000,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          on: {
-            activeIndexChange: function () {
-              slideInx = this.realIndex; //현재 슬라이드 index 갱신
-            },
-          },
-        });
-      };
-
-      breakpoint.addListener(breakpointChecker);
-      breakpointChecker();
+      AOS.init();
     </script>
-  </body>
+</body>
 </html>

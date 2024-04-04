@@ -283,6 +283,7 @@ border-radius:10px 10px 10px 0;padding:40px;background: var(--Linear, linear-gra
 .main9_r_10{max-width: 94px;width: 100%;}
 .main9_r_11{max-width: 127px;width: 100%;}
 .main9_r_12{max-width: 106px;width: 100%;}
+.main9_r_13{max-width: 45px;width: 100%;}
 
 .kakao-wrap{position: fixed;bottom:20px;right:55px;z-index: 99;}
 .kakao-wrap > a {display: block;}

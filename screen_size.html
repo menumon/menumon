@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴몬 - 화면사이즈</title>
+    <style>
+        .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100dvh;
+        }
+
+        .content {
+            font-size: 2rem;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body style="padding: 0px; margin: 0px; width: 100%;height: 100%;">
+    <div class="wrapper">
+        <div class="content">
+            <h1>화면 사이즈</h1>
+            <p>장치 해상도 너비: <span id="screen_width"></span> x <span id="screen_height"></span></p>
+            <p>화면 해상도 너비: <span id="window_width"></span> x <span id="window_height"></span></p>
+        </div>
+    </div>
+
+    <script lang="js">
+        addEventListener("resize", (event) => {
+            load_screen_size() ;
+        });
+
+        function load_screen_size() {
+            const screen_width = document.getElementById("screen_width");
+            const screen_height = document.getElementById("screen_height");
+            const window_width = document.getElementById("window_width");
+            const window_height = document.getElementById("window_height");
+
+            screen_width.textContent = screen.width;
+            screen_height.textContent = screen.height;
+            window_width.textContent = window.innerWidth;
+            window_height.textContent = window.innerHeight;
+        }
+
+        load_screen_size() ;
+
+
+    </script>
+
+</body>
+</html>
